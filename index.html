@@ -32,14 +32,12 @@
       color: #ffffff;
     }
 
-    /* GRID LAYOUT */
     .game-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 22px;
     }
 
-    /* GAME CARD */
     .game-card {
       background: #131413;
       border-radius: 14px;
@@ -53,7 +51,6 @@
       border: 1px solid #131413;
     }
 
-    /* Hover flair */
     .game-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 6px 18px rgba(0,0,0,0.18);
@@ -70,7 +67,6 @@
       transition: transform 0.2s ease;
     }
 
-    /* Icon hover pop */
     .game-card:hover .game-icon {
       transform: scale(1.07);
     }
@@ -100,12 +96,13 @@
       text-align: center;
       background: linear-gradient(90deg, #4CAF50, #2e7d32);
       color: white;
-      text-decoration: none;
       border-radius: 6px;
       font-size: 14px;
       font-weight: bold;
       width: 100px;
       transition: background 0.2s ease, transform 0.15s ease;
+      border: none;
+      cursor: pointer;
     }
 
     .play-button:hover {
@@ -128,7 +125,7 @@
       <div class="game-info">
         <div class="game-title">Papa's Pizzeria</div>
         <div class="game-dev">Developer: Flipline Studios</div>
-        <a class="play-button" href="papaspizzeria.html">Play</a>
+        <button class="play-button" onclick="launchGame('papaspizzeria.html')">Play</button>
       </div>
     </div>
 
@@ -137,7 +134,7 @@
       <div class="game-info">
         <div class="game-title">Papa's Sushiria</div>
         <div class="game-dev">Developer: Flipline Studios</div>
-        <a class="play-button" href="papassushiria.html">Play</a>
+        <button class="play-button" onclick="launchGame('papassushiria.html')">Play</button>
       </div>
     </div>
 
@@ -146,7 +143,7 @@
       <div class="game-info">
         <div class="game-title">Papa's Freezeria</div>
         <div class="game-dev">Developer: Flipline Studios</div>
-        <a class="play-button" href="papasfreezeria.html">Play</a>
+        <button class="play-button" onclick="launchGame('papasfreezeria.html')">Play</button>
       </div>
     </div>
 
@@ -155,7 +152,7 @@
       <div class="game-info">
         <div class="game-title">Papa's Burgeria</div>
         <div class="game-dev">Developer: Flipline Studios</div>
-        <a class="play-button" href="papasburgeria.html">Play</a>
+        <button class="play-button" onclick="launchGame('papasburgeria.html')">Play</button>
       </div>
     </div>
 
@@ -164,7 +161,7 @@
       <div class="game-info">
         <div class="game-title">Papa's Cheeseria</div>
         <div class="game-dev">Developer: Flipline Studios</div>
-        <a class="play-button" href="papascheeseria.html">Play</a>
+        <button class="play-button" onclick="launchGame('papascheeseria.html')">Play</button>
       </div>
     </div>
 
@@ -179,7 +176,7 @@
       <div class="game-info">
         <div class="game-title">Bloxorz</div>
         <div class="game-dev">Developer: Damien Clarke</div>
-        <a class="play-button" href="bloxorz.html">Play</a>
+        <button class="play-button" onclick="launchGame('bloxorz.html')">Play</button>
       </div>
     </div>
 
@@ -188,7 +185,7 @@
       <div class="game-info">
         <div class="game-title">Tetris</div>
         <div class="game-dev">Developer: Alexey Pajitnov</div>
-        <a class="play-button" href="tetris.html">Play</a>
+        <button class="play-button" onclick="launchGame('tetris.html')">Play</button>
       </div>
     </div>
 
@@ -197,7 +194,7 @@
       <div class="game-info">
         <div class="game-title">The World's Hardest Game</div>
         <div class="game-dev">Developer: Snubby Land</div>
-        <a class="play-button" href="theworldshardestgame.html">Play</a>
+        <button class="play-button" onclick="launchGame('theworldshardestgame.html')">Play</button>
       </div>
     </div>
 
@@ -206,7 +203,7 @@
       <div class="game-info">
         <div class="game-title">Suika Game</div>
         <div class="game-dev">Developer: Alladin X</div>
-        <a class="play-button" href="watermelon/index.html">Play</a>
+        <button class="play-button" onclick="launchGame('watermelon/index.html')">Play</button>
       </div>
     </div>
 
@@ -221,7 +218,7 @@
       <div class="game-info">
         <div class="game-title">Learn 2 Fly</div>
         <div class="game-dev">Developer: Light Bringer Games</div>
-        <a class="play-button" href="learn2fly.html">Play</a>
+        <button class="play-button" onclick="launchGame('learn2fly.html')">Play</button>
       </div>
     </div>
 
@@ -230,7 +227,7 @@
       <div class="game-info">
         <div class="game-title">Slope</div>
         <div class="game-dev">Developer: Rob Kay</div>
-        <a class="play-button" href="slope.html">Play</a>
+        <button class="play-button" onclick="launchGame('slope.html')">Play</button>
       </div>
     </div>
 
@@ -239,7 +236,7 @@
       <div class="game-info">
         <div class="game-title">Escape Road 3</div>
         <div class="game-dev">Developer: AZGames</div>
-        <a class="play-button" href="escaperoad3/game.html">Play</a>
+        <button class="play-button" onclick="launchGame('escaperoad3/game.html')">Play</button>
       </div>
     </div>
 
@@ -248,7 +245,7 @@
       <div class="game-info">
         <div class="game-title">Pokemon: Fire Red</div>
         <div class="game-dev">Developer: Game Freak</div>
-        <a class="play-button" href="pokemonfirered.html">Play</a>
+        <button class="play-button" onclick="launchGame('pokemonfirered.html')">Play</button>
       </div>
     </div>
   </div>
@@ -262,7 +259,7 @@
       <div class="game-info">
         <div class="game-title">Breaking the Bank</div>
         <div class="game-dev">Developer: Innersloth</div>
-        <a class="play-button" href="breakingthebank.html">Play</a>
+        <button class="play-button" onclick="launchGame('breakingthebank.html')">Play</button>
       </div>
     </div>
 
@@ -271,7 +268,7 @@
       <div class="game-info">
         <div class="game-title">Stealing the Diamond</div>
         <div class="game-dev">Developer: Innersloth</div>
-        <a class="play-button" href="stealingthediamond.html">Play</a>
+        <button class="play-button" onclick="launchGame('stealingthediamond.html')">Play</button>
       </div>
     </div>
 
@@ -280,7 +277,7 @@
       <div class="game-info">
         <div class="game-title">Infiltrating the Airship</div>
         <div class="game-dev">Developer: Innersloth</div>
-        <a class="play-button" href="infiltratingtheairship.html">Play</a>
+        <button class="play-button" onclick="launchGame('infiltratingtheairship.html')">Play</button>
       </div>
     </div>
 
@@ -289,7 +286,7 @@
       <div class="game-info">
         <div class="game-title">Fleeing the Complex</div>
         <div class="game-dev">Developer: Innersloth</div>
-        <a class="play-button" href="fleeingthecomplex.html">Play</a>
+        <button class="play-button" onclick="launchGame('fleeingthecomplex.html')">Play</button>
       </div>
     </div>
 
@@ -298,9 +295,23 @@
       <div class="game-info">
         <div class="game-title">Escaping the Prison</div>
         <div class="game-dev">Developer: Innersloth</div>
-        <a class="play-button" href="escapingtheprison.html">Play</a>
+        <button class="play-button" onclick="launchGame('escapingtheprison.html')">Play</button>
       </div>
     </div>
   </div>
+
+  <script>
+    function launchGame(file) {
+      const win = window.open("about:blank", "_blank");
+      fetch(file)
+        .then(r => r.text())
+        .then(html => {
+          win.document.open();
+          win.document.write(html);
+          win.document.close();
+        });
+    }
+  </script>
+
 </body>
 </html>
