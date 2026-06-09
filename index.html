@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>antagames</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-image: url('wallpaper.gif');
+      background-repeat: repeat;
+      background-position: top left;
+      background-color: #0d0d11;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #4CAF50, #2e7d32);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 26px;
+      color: #ffffff;
+    }
+
+    /* GRID LAYOUT */
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    /* GAME CARD */
+    .game-card {
+      background: #131413;
+      border-radius: 14px;
+      padding: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      border: 1px solid #131413;
+    }
+
+    /* Hover flair */
+    .game-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      border-color: #4CAF50;
+    }
+
+    .game-icon {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: #131413;
+      padding: 6px;
+      transition: transform 0.2s ease;
+    }
+
+    /* Icon hover pop */
+    .game-card:hover .game-icon {
+      transform: scale(1.07);
+    }
+
+    .game-info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .game-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: #eee;
+    }
+
+    .game-dev {
+      font-size: 14px;
+      color: #868686;
+      margin-bottom: 10px;
+    }
+
+    .play-button {
+      padding: 8px;
+      text-align: center;
+      background: linear-gradient(90deg, #4CAF50, #2e7d32);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      width: 100px;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .play-button:hover {
+      background: linear-gradient(90deg, #43a047, #1b5e20);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>antagames</h1>
+
+  <!-- Papa's Games -->
+  <h2>Papa's Games</h2>
+  <div class="game-grid">
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/papaspizzeria.webp" alt="Papa's Pizzeria">
+      <div class="game-info">
+        <div class="game-title">Papa's Pizzeria</div>
+        <div class="game-dev">Developer: Flipline Studios</div>
+        <a class="play-button" href="papaspizzeria.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/papassushiria.webp" alt="Papa's Sushiria">
+      <div class="game-info">
+        <div class="game-title">Papa's Sushiria</div>
+        <div class="game-dev">Developer: Flipline Studios</div>
+        <a class="play-button" href="papassushiria.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/papasfreezeria.webp" alt="Papa's Freezeria">
+      <div class="game-info">
+        <div class="game-title">Papa's Freezeria</div>
+        <div class="game-dev">Developer: Flipline Studios</div>
+        <a class="play-button" href="papasfreezeria.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/papasburgeria.webp" alt="Papa's Burgeria">
+      <div class="game-info">
+        <div class="game-title">Papa's Burgeria</div>
+        <div class="game-dev">Developer: Flipline Studios</div>
+        <a class="play-button" href="papasburgeria.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/papascheeseria.webp" alt="Papa's Cheeseria">
+      <div class="game-info">
+        <div class="game-title">Papa's Cheeseria</div>
+        <div class="game-dev">Developer: Flipline Studios</div>
+        <a class="play-button" href="papascheeseria.html">Play</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Puzzle Games -->
+  <h2>Puzzle Games</h2>
+  <div class="game-grid">
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/bloxorz.webp" alt="Bloxorz">
+      <div class="game-info">
+        <div class="game-title">Bloxorz</div>
+        <div class="game-dev">Developer: Damien Clarke</div>
+        <a class="play-button" href="bloxorz.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/tetris.webp" alt="Tetris">
+      <div class="game-info">
+        <div class="game-title">Tetris</div>
+        <div class="game-dev">Developer: Alexey Pajitnov</div>
+        <a class="play-button" href="tetris.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/theworldshardestgame.webp" alt="The World's Hardest Game">
+      <div class="game-info">
+        <div class="game-title">The World's Hardest Game</div>
+        <div class="game-dev">Developer: Snubby Land</div>
+        <a class="play-button" href="theworldshardestgame.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/watermelon.jpg" alt="Suika">
+      <div class="game-info">
+        <div class="game-title">Suika Game</div>
+        <div class="game-dev">Developer: Alladin X</div>
+        <a class="play-button" href="watermelon/index.html">Play</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Skill Games -->
+  <h2>Skill & Challenge Games</h2>
+  <div class="game-grid">
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/learn2fly.webp" alt="Learn 2 Fly">
+      <div class="game-info">
+        <div class="game-title">Learn 2 Fly</div>
+        <div class="game-dev">Developer: Light Bringer Games</div>
+        <a class="play-button" href="learn2fly.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/slope.png" alt="Slope">
+      <div class="game-info">
+        <div class="game-title">Slope</div>
+        <div class="game-dev">Developer: Rob Kay</div>
+        <a class="play-button" href="slope.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/escaperoad3.webp" alt="Escape Road 3">
+      <div class="game-info">
+        <div class="game-title">Escape Road 3</div>
+        <div class="game-dev">Developer: AZGames</div>
+        <a class="play-button" href="escaperoad3/game.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/pokemonred.webp" alt="Pokemon: Fire Red">
+      <div class="game-info">
+        <div class="game-title">Pokemon: Fire Red</div>
+        <div class="game-dev">Developer: Game Freak</div>
+        <a class="play-button" href="pokemonfirered.html">Play</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Henry Stickmin -->
+  <h2>Henry Stickmin Collection</h2>
+  <div class="game-grid">
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/breakingthebank.webp" alt="Breaking the Bank">
+      <div class="game-info">
+        <div class="game-title">Breaking the Bank</div>
+        <div class="game-dev">Developer: Innersloth</div>
+        <a class="play-button" href="breakingthebank.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/stealingthediamond.jpg" alt="Stealing the Diamond">
+      <div class="game-info">
+        <div class="game-title">Stealing the Diamond</div>
+        <div class="game-dev">Developer: Innersloth</div>
+        <a class="play-button" href="stealingthediamond.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/infiltratingtheairship.webp" alt="Infiltrating the Airship">
+      <div class="game-info">
+        <div class="game-title">Infiltrating the Airship</div>
+        <div class="game-dev">Developer: Innersloth</div>
+        <a class="play-button" href="infiltratingtheairship.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/fleeingthecomplex.png" alt="Fleeing the Complex">
+      <div class="game-info">
+        <div class="game-title">Fleeing the Complex</div>
+        <div class="game-dev">Developer: Innersloth</div>
+        <a class="play-button" href="fleeingthecomplex.html">Play</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img class="game-icon" src="icons/escapingtheprison.png" alt="Escaping the Prison">
+      <div class="game-info">
+        <div class="game-title">Escaping the Prison</div>
+        <div class="game-dev">Developer: Innersloth</div>
+        <a class="play-button" href="escapingtheprison.html">Play</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
