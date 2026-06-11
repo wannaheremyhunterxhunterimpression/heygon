@@ -309,18 +309,11 @@
     </div>
   </div>
 
-  <script>
-    function launchGame(file) {
-      const win = window.open("about:blank", "_blank");
-      fetch(file)
-        .then(r => r.text())
-        .then(html => {
-          win.document.open();
-          win.document.write(html);
-          win.document.close();
-        });
-    }
-  </script>
+<script>
+  function launchGame(file) {
+    window.open(file, "_blank");
+  }
+</script>
 
 </body>
 </html>
